@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'zorque';
+  src: url(fonts/zorque.otf);
+}
+
+* {
+  font-family: zorque;
+  text-align: center;
+}
+
+*::selection {
+  background-color: #ffff99;
+
+}
+
+body {
+  background-color: cyan;
+}
+
+#title {
+  color: red;
+}
+
+.grido {
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 30rem;
+  height: 30rem;
+  /* height: 0px; */
+  margin: auto;
+}
+
+.grid {
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 90px;
+  transition-duration: 0.3s;
+}
+
+#btn {
+  padding: 25px 45px;
+  border: none;
+  border-radius: 90px;
+  border: 1px solid black;
+  color: white;
+  font-size: 28px;
+  margin-top: 50px;
+  background-color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .grido {
+    width: 20rem;
+    height: 22rem;
+    margin-top: 50px;
+    padding: 0;
+  }
+}
